@@ -51,7 +51,7 @@ if (ASTROID_JOOMLA_VERSION < 4) {
 
   $introcount = (count($this->intro_items));
   $counter = 0;
-  $columns = ASTROID_JOOMLA_VERSION > 3 ? 1 : $this->columns;
+  $columns = ASTROID_JOOMLA_VERSION > 3 ? $this->params->get('num_columns', 1) : $this->columns;
 
   ?>
 
